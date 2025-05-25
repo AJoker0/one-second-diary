@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>One-Second Diary</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📅 One-Second Diary</h1>
+    <p class="desc">Snap a selfie or moment each day!<br>Everything stays on your device.</p>
+    <div id="calendar"></div>
+    <div id="photo-capture">
+      <input type="file" id="file-input" accept="image/*" capture="user" style="display:none">
+      <button id="take-photo-btn">📷 Add Today's Photo</button>
+      <div id="preview"></div>
+    </div>
+    <button id="generate-gif-btn">🎞️ Generate Montage GIF</button>
+    <div id="gif-result"></div>
+    <footer>
+      <small>All data stays on your device • <a href="https://github.com/AJoker0" target="_blank">by AJoker0</a></small>
+    </footer>
+  </div>
+
+  <script src="idb.js"></script>
+  <script src="gif.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
